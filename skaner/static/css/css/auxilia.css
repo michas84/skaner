@@ -1,0 +1,226 @@
+body {
+    background-color: #8d9298;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    color: black;
+}
+#auxiliaHeader {
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    width: 790px;
+}
+
+#auxiliaBody {
+    margin: 0;
+    padding : 0;
+    float: left;
+    width: 790px;
+    clear: both;
+}
+
+#auxiliaLogo {
+    width: 150px;
+    height: 53px;
+    float: left;
+    vertical-align: bottom;
+}
+
+#auxiliaTop {
+    width: 635px;
+    height: 53px;
+    float: left;
+}
+
+.auxiliaTopSpan {
+    margin-top: 39px;
+    float: left;
+    display: inline;
+    color: #515055;
+    background-color: #FFCC33;
+    font: 11px/14px Arial, Verdana, Helvetica, sans-serif;
+}
+
+.auxiliaTopSpan a {
+    text-decoration: none;
+    color: #515055;
+    background-color: #FFCC33;
+}
+
+.current_vmnr, .admin {
+    margin-top: 39px;
+    float: right;
+    display: inline;
+    font: 11px/14px Arial, Verdana, Helvetica, sans-serif;
+}
+
+.current_vmnr {
+    color: #515055;
+    background-color: #B3FF00;
+}
+
+.admin {
+    color: #515055;
+    background-color: #FFB300;
+}
+
+.current_vmnr a {
+    text-decoration: none;
+    color: #515055;
+    background-color: #B3FF00;
+}
+
+.admin a {
+    text-decoration: none;
+    color: #515055;
+    background-color: #FFB300;
+}
+
+#auxiliaNavigation {
+    width: 150px;
+    float: left;
+    font: 10.5px/12px Arial, Verdana, Helvetica, sans-serif;
+    text-align: right;
+}
+
+#auxiliaNavigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+#auxiliaNavigation ul li {
+    margin: 0;
+    padding: 14px 0 0 0;
+    display: block;
+    margin-left: 10px;
+}
+
+#auxiliaNavigation ul li a {
+    height: 15px;
+    color: black;
+    text-decoration: none;
+    background: #8d9298 url(/images/spacerblack.gif);
+    display: block;
+    padding-right: 10px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+}
+
+#auxiliaNavigation ul li a:hover,
+#auxiliaNavigation ul li a.Active {
+    background-color: #8d9298;
+    color: #dfC933;
+    padding-right: 0;
+    background-image: none;
+    font-weight: bold;
+}
+
+#auxiliaNavigation ul li a:hover:after,
+#auxiliaNavigation ul li a.Active:after {
+    content: "  *";
+}
+
+#auxiliaNavigation ul li.ActiveAppender {
+    background-color: #FFCC33;
+}
+
+#auxiliaBodyContent {
+    background-color: #ffffff;
+    color: #515055;
+    width: 635px;
+    float: left;
+    min-height: 700px;
+    height: auto;
+}
+
+/*\*/
+* html #auxiliaBodyContent {
+    height: 700px;
+}
+/**/
+
+#auxiliaBodyContent * {
+    padding-top: 0;
+    margin-top: 10px;
+}
+
+#auxiliaBunterstreifen {
+    width: 5px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+#auxiliaYield {
+    min-height: 680px;
+    padding-left: 15px;
+}
+
+/*\*/
+* html #auxiliaYield {
+    height: 680px;
+}
+/**/
+
+#auxiliaFooter {
+    font: 10.5px/10.5px Arial, Verdana, Helvetica, sans-serif;
+    height: 20px;
+}
+
+#auxiliaFooter a {
+    text-decoration: none;
+    color: #515055;
+    font-weight: bold;
+}
+
+#auxiliaFooter ul {
+    list-style: none;
+}
+
+#auxiliaFooter ul li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.maklerportal_nav {
+    border: solid 1px gray;
+}
+
+input{
+    padding-left: 0px !important;
+}
+
+#Login {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    padding: 25px;
+    margin-top: 100px;
+    background: #fafafa;
+}
+
+#Login label {
+    font: bold 14px/16px Arial;
+}
+
+#SignUp {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    padding: 25px;
+    margin-top: 100px;
+    background: #fafafa;
+}
+
+#SignUp label {
+    font: bold 14px/16px Arial;
+}

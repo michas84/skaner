@@ -1,0 +1,76 @@
+#content_main p {
+margin-top: 1.5em !important;
+}
+
+#content_main p label {
+font-weight: bold;
+font-size: 115%;
+}
+
+#content_main input, #content_main label, #content_main textarea {
+margin-top: 1em;
+}
+
+.Filters input, .Filters select {
+    font-size: 10px;
+    margin: 0 !important;
+}
+
+.Filters td {
+    margin: 0;
+    padding: 0;
+}
+
+.Filters {
+    border-top: solid 1px gray;
+    border-bottom: solid 2px gray;
+}
+
+.GrayedOut {
+    color: gray;
+}
+
+#LoginTable {
+    width: 400pt !important;
+}
+
+#LoginTable tr td {
+    width: 100% !important;
+}
+
+#content_main div.dates {
+    width: 100%;
+    height: 50px;
+}
+
+#content_main div.dates div.container {
+    width: 35%;
+}
+
+#content_main div.dates div.container#minDate {
+    float:left;
+}
+
+#content_main div.dates div.container#maxDate {
+    float:right;
+    float:left;
+}
+
+#content_main div.dates div.container#gesendet {
+    float:right;
+    width: 15%
+}
+
+#content_main div.dates div.container#vermittler {
+    float:right;
+    width: 15%
+}
+
+#content_main div.dates div.container input,
+#content_main div.dates div.container label {
+    display: inline;
+    margin-top: 0px;
+}
+#content_main table {
+    border: 1px;
+}

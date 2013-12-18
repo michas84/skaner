@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:tal="http://xml.zope.org/namespaces/tal"
+xmlns:metal="http://xml.zope.org/namespaces/metal"
+metal:use-macro="base.macros['base']"
+metal:use-macro="skaner.macros['skaner']">
+
+<tal:block metal:fill-slot="content">
+
+<div>
+    <form action="${request.route_url('scan')}" id="scanForm" method="post" name="scanForm">
+        <div class="container">
+            <div class="label">
+                <label>Zeskanuj kod kreskowy:</label>
+            </div>
+            <div class="input">
+                <input name="code" type="text" id="code"></input>
+            </div>
+        </div>
+
+        <input name="scan" type="submit" value="OK" />
+    </form>
+</div>
+
+<script type="text/javascript">
+    document.getElementById('code').focus();
+</script>
+</tal:block>
+</html>

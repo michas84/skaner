@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:tal="http://xml.zope.org/namespaces/tal"
+xmlns:metal="http://xml.zope.org/namespaces/metal"
+metal:use-macro="base.macros['base']"
+metal:use-macro="skaner.macros['skaner']">
+
+<tal:block metal:fill-slot="content">
+
+<a href="${request.route_url('export_database')}">Zapisz bazę do pliku csv</a>
+
+<div>
+    <table class="yellow">
+        <tr>
+            <th>kod kreskowy</th>
+            <th>nazwa</th>
+            <th>stawka vat</th>
+        </tr>
+        <tr tal:repeat="element theList">
+            <td>${element.code}</td>
+            <td>${element.name}</td>
+            <td>${element.vat}</td>
+            <td class="image"><a href="${request.route_url('edit_product\'', code = element.code)}"><img src="${request.static_url('skaner:static/img/edit.png')}"/></a></td>
+            <td class="image"><a href="${request.route_url('delete_product\'', code = element.code)}"><img src="${request.static_url('skaner:static/img/trash.png')}"/></a></td>
+        </tr>
+    </table>
+</div>
+
+</tal:block>
+</html>

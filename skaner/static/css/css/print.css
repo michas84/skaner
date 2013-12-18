@@ -1,0 +1,38 @@
+body {
+	padding: 0;
+	margin: 0;
+	width: auto;
+	background: transparent;
+}
+
+#layout_wrapper {
+	margin: 0;
+	background: transparent;
+	padding: 0;
+}
+
+#main_wrapper {
+	padding-top: 96px;
+	background: url("../img/head_print.gif") no-repeat top left;
+}
+
+#layout_top, #layout_bottom, #layout_main, #content_wrapper {
+	background: transparent;	
+}
+
+#layout_main, #content_wrapper {
+	margin: 0;
+	width: auto;
+	padding: 0;
+}
+
+#content_main {
+	margin: 0;
+	float: none;
+	padding: 0;
+	background: #FFFFFF;
+}
+
+#sidebar_wrapper, #nav_level1, #nav_business, #content_nav, #content_footer, #page_footer {
+	display: none;
+}

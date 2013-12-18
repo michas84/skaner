@@ -1,0 +1,6 @@
+pyramid==1.4
+SQLAlchemy==0.8.0b2
+transaction==1.4.1
+pyramid_tm==0.7
+zope.sqlalchemy==0.7.2
+waitress==0.8.2

@@ -1,0 +1,92 @@
+body {
+	background-color: #FFFFFF;
+}
+
+iframe {
+	width: 100%;
+	border: none;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+/*
+ * background and container for all page elements
+ */
+#layout_wrapper {
+	width: 960px;
+	padding: 80px 8px 0px 8px;
+	background: url("../images/triplex/popup_header.gif") no-repeat #9E9E9E;
+	margin: 8px auto;
+}
+
+#layout_top {
+	height: 11px;
+	background-image: url("../images/triplex/layout_box_top.gif");
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+#layout_main {
+	background-image: url("../images/triplex/layout_box_bg.gif");
+	padding: 0 5px;
+}
+#layout_bottom {
+	height: 20px;
+	padding: 0 8px;
+	background-color: #969696;
+	background-image: url("../images/triplex/layout_box_bottom.gif");
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+/*
+ * Navigation Level1
+ */
+#nav_level1 {
+	background-image: url("../images/triplex/popup_nav_bg.gif");
+	vertical-align: bottom !important;
+	overflow: hidden;
+}
+
+#content_main {
+	background: url("../images/triplex/popup_content_bg.gif") no-repeat bottom left #FFFFFF;
+	color: #FFFFFF;
+	padding: 8px 80px 20px;
+	min-height: 60px;
+	color: #000000;
+	overflow-x: hidden;
+	width: 800px;
+	margin: 0;
+}
+
+/* css hack for ie6 */
+* html #content_main div.yellow, #content_main div.grey {
+	width: 768px;
+	padding-right: 0px;
+}
+/*
+ * part of the content area for the real page content
+ */
+#content_main div.yellow, #content_main div.grey {
+	width: 768px;
+}
+
+#page_footer {
+	background: url("../images/triplex/popup_footer.gif") no-repeat bottom;
+	margin: 0px -8px 0 -8px;
+	height: 15px;
+	padding-left: 10px;
+}
+
+#page_footer ul li {
+	float: left;
+	padding: 0 5px;
+	border-right: 1px solid #808080;
+}
+
+#page_footer ul li.last {
+	border-right: none;
+}
+
+#page_footer ul li a {
+	color: inherit;
+}
