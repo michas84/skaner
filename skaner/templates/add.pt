@@ -9,6 +9,8 @@ metal:use-macro="skaner.macros['skaner']">
 
 <div>
     <form action="${request.route_url('add_product')}" id="addForm" method="post" name="addForm">
+        <div tal:repeat="msg request.session.pop_flash('message')" class="Message"><p>${msg}</p></div>
+
         <div class="container">
             <div class="label">
                 <label>Kod kreskowy:</label>

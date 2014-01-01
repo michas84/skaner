@@ -1,3 +1,5 @@
+#encoding:utf8
+
 #from pyramid.response import Response
 from pyramid.view import view_config
 from pyramid.response import Response
@@ -46,12 +48,13 @@ def scan(request):
 def add(request):
 
     name = None
+    vat = None
     if 'code' in request.session and request.session['code'] != None:
         code = request.session['code']
         request.session['code'] = None
     else:
         code = None
-    vat = None
+
     if 'add' in request.params:
         code = request.params['code']
         name = request.params['name']
@@ -60,10 +63,11 @@ def add(request):
         try:
             Product.create(product)
             transaction.commit()
-            redirect = HTTPFound(location = request.route_url('list'))
+            redirect = HTTPFound(location = request.route_url('list_products'))
             return redirect
-        except Exception:
+        except Exception as e:
             transaction.abort()
+            request.session.flash("Błąd przy zapisywaniu. {0}".format(e).decode('utf-8'), 'message')
             return {'result': 'fail'}
 
     return {'name': name, 'code': code, 'vat': vat}
@@ -77,7 +81,7 @@ def delete(request):
     code = request.matchdict['code']
     Product.delete(code)
     request.session.flash("Produkt z kodem kreskowym {0} skasowany.".format(code))
-    redirect = HTTPFound(location = request.route_url('list'))
+    redirect = HTTPFound(location = request.route_url('list_products'))
     return redirect
 
 @view_config(route_name='export_database')

@@ -7,6 +7,8 @@ metal:use-macro="skaner.macros['skaner']">
 
 <tal:block metal:fill-slot="content">
 
+<div tal:repeat="msg request.session.pop_flash('message')" class="Message"><p>${msg}</p></div>
+
 <a href="${request.route_url('export_database')}">Zapisz bazę do pliku csv</a>
 
 <div>

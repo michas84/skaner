@@ -20,6 +20,13 @@ skaner.egg-info/requires.txt
 skaner.egg-info/top_level.txt
 skaner/scripts/__init__.py
 skaner/scripts/initializedb.py
+skaner/static/img/edit.png
+skaner/static/img/glyphicons-halflings-white.png
+skaner/static/img/glyphicons-halflings.png
+skaner/static/img/plus.png
+skaner/static/img/trash.png
+skaner/static/js/bootstrap.js
+skaner/static/js/bootstrap.min.js
 skaner/templates/add.pt
 skaner/templates/layout.pt
 skaner/templates/list.pt
